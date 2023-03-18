@@ -65,21 +65,7 @@ function App() {
       {isConnected ? (
         <div style={{ textAlign: "center" }}>
           <ConnectButton />
-          <input
-            type="text"
-            name="Name"
-            className="question"
-            id="name"
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
-            value={name}
-            required
-            autoComplete="off"
-          />
-          <label for="name">
-            <span>What's your name?</span>
-          </label>
+
           <button
             type="submit"
             id="submitBtn"
